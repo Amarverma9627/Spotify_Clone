@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212f1;
+    
+}
+html{
+    font-size: 65.5%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrapper{
+    height: calc(100vh - 50px);
+    width: 50%;
+  
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.logo{
+    text-align: center;
+    margin-block: -12rem 4rem;
+    font-size: 3rem;
+}
+.logo p{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.first-input input {
+    text-align: center;
+    height:4rem;
+    width: 32rem;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size:2rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+}
+
+
+.main-wrapper .first-input{
+    position: relative;
+}
+
+.main-wrapper label{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.623);
+    transition: all 0.5s ease-in-out;
+    font-size: 1.7rem;
+    left: 0;
+    top: -2rem;
+   
+}
+
+.main-wrapper .first-input i{
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 10px; 
+}
+.link{
+   padding:4rem 15rem 0px 0px;
+  text-decoration: underline;
+}
+.link a{
+    color: rgb(11, 185, 11);
+    font-size: 1.4rem;
+}
+.main-wrapper button{
+    margin-block: 4rem 0;
+    padding: 1.2rem 13rem;
+    border-radius:1.5rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: rgb(77, 221, 113);
+}
+#cross i{
+    position: absolute;
+    right:0;
+    top:5px;
+    
+}
+.show{
+    display: block;
+}
+.hide{
+    display:none;
+}

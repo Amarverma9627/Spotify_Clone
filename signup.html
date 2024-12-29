@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="main-wrapper">
+            <div class="logo">
+                <img src="assets/sptify-logo.png" alt="logo">
+                <h1>Sign Up to</h1>
+                <p>Start listening</p>
+            </div>
+            <div class="first-input">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input id="place" type="input" spellcheck="true" placeholder="" onclick="showInput()">
+                <div id="cross" class="hide">
+                    <i class="fa fa-times" aria-hidden="true" onclick="cross()"></i>
+                </div>
+                <label class="name">Email address</label>
+
+            </div>
+            <div class="link">
+                <a href="#">Use phone number instead.</a>
+            </div>
+            <button>Next</button>
+
+
+        </div>
+
+    </section>
+    <script>
+        let demo = document.getElementById('place');
+        demo.addEventListener('input', function () {
+            let demo = document.getElementById('place').value;
+            let get = document.getElementById('cross')
+            let demo2 = get.getAttribute('class')
+
+            console.log(demo)
+            if (demo2 == 'hide' && demo.length > '') {
+                get.setAttribute('class', 'show')
+            }
+
+            if (demo2 == 'show' && demo.length == '') {
+                get.setAttribute('class', 'hide')
+            }
+        })
+
+        function cross() {
+            let demo = document.getElementById('place').
+                value = '';
+            let get = document.getElementById('cross')
+            let demo2 = get.getAttribute('class')
+
+            if (demo2 == 'show' && demo.length == '') {
+                get.setAttribute('class', 'hide')
+            }
+        }
+    </script>
+</body>
+
+</html>

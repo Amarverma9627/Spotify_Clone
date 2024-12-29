@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 6.2rem 1%;
+    background-color: black;
+
+}
+
+html {
+    font-size: 65.5%;
+}
+
+/* ............header secton start......... */
+
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3rem 0px;
+    z-index: 100;
+}
+
+#header .left {
+    color: white;
+    font-size: 38px;
+
+}
+
+#header .mid {
+    display: flex;
+    width: 50%;
+    gap: 0 1rem;
+    height: 75%;
+    justify-content: flex-end;
+}
+
+#header .mid .mid-searchBox {
+    background-color: rgba(63, 61, 61, 0.493);
+    align-items: center;
+    display: flex;
+    border-radius: 5rem;
+    width: 75%;
+    padding-inline: 1rem;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+
+
+#header .mid .home {
+    font-size: 2.8rem;
+    color: white;
+    background-color: rgba(63, 61, 61, 0.493);
+    height: auto;
+    width: 5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .mid .mid-searchBox i {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.76);
+    cursor: pointer;
+}
+
+#header .mid .mid-searchBox input {
+    width: 100%;
+    font-size: 1.7rem;
+    height: 60%;
+    background: none;
+    color: rgba(255, 255, 255, 0.815);
+    border-right: 1px solid rgba(255, 255, 255, 0.541);
+    padding-inline: 10px;
+}
+
+#folder {
+    padding-inline: 10px;
+}
+
+/* ......right side buttons. Header...... */
+#header .right button {
+    padding: 1.2rem 2.4rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+    background-color: rgb(235, 91, 24);
+    color: white;
+
+}
+
+#header .right button:last-child:hover {
+    box-shadow: 0 0 10px 3px white;
+    cursor: pointer;
+
+}
+
+#header .right button:first-child:hover {
+    font-size: 1.6rem;
+    transform: translateY(-1px) scale(1);
+}
+
+#header .right button:active {
+    background-color: rgb(240, 79, 5);
+    color: white;
+    opacity: 0.8;
+}
+
+.right button {
+    margin-inline: 10px;
+}
+
+#header .right button:first-of-type {
+    background: none;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+#header .right button:first-of-type:hover {
+    cursor: pointer;
+}
+
+#header .right button:first-of-type:active {
+    color: rgb(240, 79, 5);
+}
+
+
+/* mid left side code */
+
+.mid-flex {
+    display: flex;
+}
+
+.mid-left {
+    background-color: rgba(63, 61, 61, 0.384);
+    height: calc(100vh - 100px);
+    width: 23%;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.mid-left .left-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 1.6rem;
+    z-index: 100;
+    background-color: rgb(20, 19, 19);
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.left-top h1 {
+    cursor: pointer;
+}
+
+.Library {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+/* ............left-mid........ */
+
+.left-mid {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    overflow-y: scroll;
+}
+
+.left-middle {
+    background-color: rgb(37, 35, 35);
+    height: 12rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  
+}
+
+::-webkit-scrollbar-track {
+    background-color: #4743436c;
+    border-radius: 0 10px 0 0;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(117, 107, 107);
+    border-radius: 0 5px 0 0;
+ 
+}
+
+.left-middle button {
+    width: 12rem;
+    padding: 10px;
+    color: black;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .............left-bottom............... */
+.left-bottom {
+    background-color: rgb(20, 19, 19);
+    position: absolute;
+    bottom: 15px;
+    width: 23%;
+    height: 31%;
+    padding: 2rem 1rem;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+}
+
+.left-list {
+    display: grid;
+    grid-template-columns: 50px 140px 100px;
+    grid-gap: 10px;
+    font-size: 1.3rem;
+    flex-direction: column;
+
+}
+
+.left-list a {
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: 540;
+}
+
+.lang {
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 20px;
+    display: inline-block;
+    width: 10rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-block: 30px;
+    cursor: pointer;
+}
+
+.lang i {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+.lang select {
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.lang select option {
+    background-color: black;
+}
+
+
+
+/* ....mid .right  code */
+.mid-right {
+    background-color: rgba(63, 61, 61, 0.384);
+    height: calc(100vh - 80px);
+    width: 75.5%;
+    border-radius: 1rem;
+    position: absolute;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.right-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.right-title a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.song-grid {
+    display: grid;
+    /* grid-template-columns: repeat(6,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    color: white;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.songs {
+    padding: 0px 10px;
+    position: relative;
+
+}
+
+.playbtn i {
+    top: 110px;
+    position: absolute;
+    font-size: 5rem;
+    left: 10rem;
+    color: limegreen;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.song-grid .songs:hover .playbtn i {
+    top: 90px;
+    display: block;
+    opacity: 1;
+    transform: translateX(-5px);
+}
+
+.song-grid .songs .img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.song-grid .songs img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+}
+
+.song-grid .songs:hover {
+    background: linear-gradient(to top, rgb(59, 58, 58), transparent);
+    height: 20rem;
+    border-radius: 1rem;
+    /* background-color: rgb(240, 79, 5); */
+}
+
+.align {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.align h3 {
+    color: rgba(255, 255, 255, 0.63);
+}
+
+/* .......for second part of song.... */
+
+.song-grid .songs .second img {
+    border-radius: 0;
+}
+
+.song-grid .secondd:hover {
+    background: linear-gradient(to top, rgb(59, 58, 58), transparent);
+    height: 21rem;
+    border-radius: 1rem;
+
+}
+
+/* ................footer code--------- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    color: white;
+    gap: 10px;
+    justify-content: space-around;
+    padding-block: 100px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+#footer h2 {
+    padding: 40px 40px 70px 50px;
+    color: rgba(255, 255, 255, 0.486);
+    font-weight: 200;
+}
+
+.footer-item h1 {
+    padding-block: 10px;
+}
+
+.item-link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-link a {
+
+    color: rgba(255, 255, 255, 0.603);
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.item-link a:hover {
+    color: white;
+}
+
+/* ......icons.... */
+.icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 15px;
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-bg:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 0 10px 3px white;
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 2.2rem;
+    border-radius: 50%;
+    background-color: rgba(95, 90, 90, 0.466);
+}

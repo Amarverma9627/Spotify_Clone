@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="section">
+        <div class="main">
+            <div class="logo">
+                <img src="assets/sptify-logo.png" alt="logo">
+                <h1>Log in to Spotify</h1>
+            </div>
+            <div class="first-input">
+                <label class="name" spellcheck="true">Email or UserName</label>
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input type="input" id="place" spellcheck="true">
+                <div id="cross" class="hide">
+                    <i class="fa fa-times" aria-hidden="true" onclick="cross()"></i>
+                </div>
+            </div>
+            <div class="second-input">
+                <label class="pass">Password</label>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input  type="password" spellcheck="true" id="inputpass">
+                <span class="show" id="open">
+                    <i class="fa fa-eye" aria-hidden="true" onclick="show()">
+
+                    </i>
+                </span>
+                <span class="hide" id="close">
+                    <i class="fa fa-eye-slash" aria-hidden="true" onclick="hide()"></i>
+                </span>
+            </div>
+            <div class="btn">
+                <button>Log in</button>
+            </div>
+            <div class="forget">
+                <a href="#"> Forget your Password ?</a>
+            </div>
+            <div class="ac-signup">
+                <p>Don't have an account? <span>Sign up for Spotify</span></p>
+            </div>
+        </div>
+
+    </section>
+    <div class="footer">
+        <p>
+            This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/sptify-logo.png">
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="left">
+            <i class="fa fa-spotify" style="cursor: pointer;" title="Spotify" aria-hidden="true"></i>
+        </div>
+        <div class="mid">
+            <div class="home">
+                <i class="fa fa-home" style="cursor: pointer;" title="home" aria-hidden="true"></i>
+            </div>
+            <div class="mid-searchBox">
+                <i class="fa fa-search" title="Search" aria-hidden="true"></i>
+                <input type="search" placeholder="What do you want to Play ?">
+                <i id="folder" title="Browse" class="fa fa-folder-open" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="right">
+            <button title="Create New Account" onclick="click1()">Sign up</button>
+            <button title="Enter Id And Password" onclick="click2()">Log In</button>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="mid-flex">
+
+            <!-- ..........Mid Left Code.........         -->
+            <div class="mid-left">
+
+                <div class="left-top">
+                    <div class="Library">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span>Your Library</span>
+                    </div>
+                    <h1 title="Create Playlist or Folder">+</h1>
+                </div>
+
+                <div class="left-mid">
+
+
+                    <div class="left-middle">
+                        <h1>Create Your First Playlist</h1>
+                        <h3>It's easy , we'll help you</h3>
+                        <button>Create Playlist</button>
+                    </div>
+                    <div class="left-middle">
+                        <h1>Let's find tha some Podcasts to follow</h1>
+                        <h3>we'll keep you updates on new episods</h3>
+                        <button>Browse Podcasts</button>
+                    </div>
+
+
+                    <div class="left-middle">
+                        <h1>Create Your First Playlist</h1>
+                        <h3>It's easy , we'll help you</h3>
+                        <button>Create Playlist</button>
+                    </div>
+                </div>
+
+                <div class="left-bottom">
+                    <div class="left-list">
+                        <a href="#">Legal</a>
+                        <a href="#">Ssafety & Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <div class="lang">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+
+                        <select name="select" id="">
+                            <option value="select">English</option>
+                            <option value="select">Hindi</option>
+                            <option value="select">Japnes</option>
+                            <option value="select">UK</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- .........Mid Right code........ -->
+            <div class="mid-right">
+                <div class="right-title">
+                    <h1>Popular Artists</h1>
+                    <a href="#">Show all</a>
+                </div>
+
+                <div class="song-grid ">
+                    <div class="songs">
+                        <div class="img">
+                            <img src="assets/pritam.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Pritam</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs">
+                        <div class="img">
+                            <img src="assets/sachin.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>sachin-Jigar</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs">
+                        <div class="img">
+                            <img src="assets/arijit.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Arijit Singh</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs">
+                        <div class="img">
+                            <img src="assets/rahman.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>A.R.Rahman</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs">
+                        <div class="img">
+                            <img src="assets/vishal.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Vishal-Shekhar</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs">
+                        <div class="img ">
+                            <img src="assets/aslam.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Atif Aslam</h1>
+                            <h3>Artist</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- .....second song line... -->
+                <div class="right-title">
+                    <h1>Popular albums and Singles</h1>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="song-grid second">
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/HoneySingh2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>GLORY</h1>
+                            <h3>Yo Yo Honey Singh</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/ashique2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Aashiqui2</h1>
+                            <h3>Mithoon,Ankit Tiwari ,Jeet Ganguli</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/patandar.jpeg" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Patandar</h1>
+                            <h3>Arjan Dhillon ,Mxcri</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/joTumMereHo2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>JO Tum Mere Ho</h1>
+                            <h3>Anuv Jain</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/MakingMamories2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Making Memorie</h1>
+                            <h3>Karan Aujla,Ikky</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/YeJavaniHaiDivani2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Ye Javani Hain Diwani</h1>
+                            <h3>Pritam</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ...third song line... -->
+                <div class="right-title">
+                    <h1>Popular Radio</h1>
+                    <a href="#">Show all</a>
+                </div>
+
+                <div class="song-grid second">
+
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/arjit-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>GLORY</h1>
+                            <h3>Yo Yo Honey Singh</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/kisore-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Aashiqui2</h1>
+                            <h3>Mithoon,Ankit Tiwari ,Jeet Ganguli</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/diljit-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Patandar</h1>
+                            <h3>Arjan Dhillon ,Mxcri</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/shreya-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>JO Tum Mere Ho</h1>
+                            <h3>Anuv Jain</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/kk-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Making Memorie</h1>
+                            <h3>Karan Aujla,Ikky</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/udit-3.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Ye Javani Hain Diwani</h1>
+                            <h3>Pritam</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ...forth song line... -->
+
+                <div class="right-title">
+                    <h1>Featured Charts</h1>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="song-grid second">
+
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/HoneySingh2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>GLORY</h1>
+                            <h3>Yo Yo Honey Singh</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/ashique2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Aashiqui2</h1>
+                            <h3>Mithoon,Ankit Tiwari ,Jeet Ganguli</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/patandar.jpeg" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Patandar</h1>
+                            <h3>Arjan Dhillon ,Mxcri</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/joTumMereHo2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>JO Tum Mere Ho</h1>
+                            <h3>Anuv Jain</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/MakingMamories2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Making Memorie</h1>
+                            <h3>Karan Aujla,Ikky</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/YeJavaniHaiDivani2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Ye Javani Hain Diwani</h1>
+                            <h3>Pritam</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ...fifth song line... -->
+
+                <div class="right-title">
+                    <h1>Playlist from Our Editors</h1>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="song-grid second">
+
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/HoneySingh2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>GLORY</h1>
+                            <h3>Yo Yo Honey Singh</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/ashique2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Aashiqui2</h1>
+                            <h3>Mithoon,Ankit Tiwari ,Jeet Ganguli</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/patandar.jpeg" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Patandar</h1>
+                            <h3>Arjan Dhillon ,Mxcri</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/joTumMereHo2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>JO Tum Mere Ho</h1>
+                            <h3>Anuv Jain</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/MakingMamories2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Making Memorie</h1>
+                            <h3>Karan Aujla,Ikky</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="songs secondd">
+                        <div class="img second">
+                            <img src="assets/YeJavaniHaiDivani2.png" alt="img">
+                        </div>
+                        <div class="align">
+                            <h1>Ye Javani Hain Diwani</h1>
+                            <h3>Pritam</h3>
+                        </div>
+                        <div class="playbtn">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <footer id="footer">
+                    <div class="footer-grid">
+
+                        <div class="footer-item">
+                            <h1>Compnay</h1>
+                            <div class="item-link">
+                                <a href="#" id="">About</a>
+                                <a href="#" id="">Jobs</a>
+                                <a href="#" id="">For The Record</a>
+                            </div>
+
+                        </div>
+                        <div class="footer-item">
+                            <h1>Communities</h1>
+                            <div class="item-link">
+                                <a href="#" id="">For Artists</a>
+                                <a href="#" id="">Developers</a>
+                                <a href="#" id="">Advertising</a>
+                                <a href="#" id="">Investors</a>
+                                <a href="#" id="">Vendors</a>
+                            </div>
+
+                        </div>
+                        <div class="footer-item">
+                            <h1>Useful links</h1>
+                            <div class="item-link">
+                                <a href="#" id="">Support</a>
+                                <a href="#" id="">Free Mobile App</a>
+                            </div>
+
+                        </div>
+                        <div class="footer-item">
+                            <h1>Spotify Plans</h1>
+                            <div class="item-link">
+                                <a href="#" id="">Premium Individual</a>
+                                <a href="#" id="">Premium Duo</a>
+                                <a href="#" id="">Premimum Family</a>
+                                <a href="#" id="">Premimum Student</a>
+                                <a href="#" id="">Spotify Fee</a>
+                            </div>
+                        </div>
+                        <div class="icons">
+
+                            <div class="icon-bg">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="icon-bg">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="icon-bg">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h2>
+                        © 2024 Spotify AB
+                    </h2>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <script src="script.js" >
+       
+    </script>
+</body>
+
+</html>
